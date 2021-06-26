@@ -67,7 +67,7 @@ if __name__ == '__main__' :
             music_dir='C:\\Users\\sahaa\\Music'
             songs = os.listdir(music_dir)
             os.startfile(os.path.join(music_dir,songs[0]))
-        elif 'the time' in query :
+        elif 'what is the time' in query :
             strtime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"The time is {strtime}")
         elif 'open visual studio' in query :
